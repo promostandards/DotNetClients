@@ -1,0 +1,2 @@
+This project includes include clients for the Promostandards Webservices for Product Pricing and Configuration, Product Data and Media Content, using the endpoints of Hit Promotional Products.
+Before testing the solution you need to setup your credentials on App.Config file on the keys "wsUserName" and "wsPassword". You can also adjust the path where the response will be saved on the config key "responseSavePath"
