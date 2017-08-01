@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0D9EEAF-05BB-4FAF-9244-043B3E4EC580}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PricingAndConfigurationTest</RootNamespace>
+    <AssemblyName>PricingAndConfigurationTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProductMediaClient.cs" />
+    <Compile Include="InspectorBehavior.cs" />
+    <Compile Include="MessageInspector.cs" />
+    <Compile Include="ProductDataClient.cs" />
+    <Compile Include="HierarchyPrinter.cs" />
+    <Compile Include="PricingAndConfigurationClient.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\WSMediaContent\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WSPricingAndConfiguration\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WSProductData\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSMediaContent\GetMediaContentRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSMediaContent\GetMediaContentResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSMediaContent\GetMediaDateModifiedRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSMediaContent\GetMediaDateModifiedResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSMediaContent\Media_v1_0_0.wsdl" />
+    <None Include="Service References\WSMediaContent\PricingAndConfigurationTest.WSMediaContent.getMediaContentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSMediaContent\PricingAndConfigurationTest.WSMediaContent.getMediaDateModifiedResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSMediaContent\SharedMediaObjects.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetAvailableChargesRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetAvailableChargesResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetAvailableLocationsRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetAvailableLocationsResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetConfigurationAndPricingRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetConfigurationAndPricingResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetDecorationColorsRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetDecorationColorsResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetFobPointsRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\GetFobPointsResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\iso3166-country-code.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\iso4217-currency-code.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\PricingAndConfigurationTest.WSPricingAndConfiguration.getAvailableChargesResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\PricingAndConfigurationTest.WSPricingAndConfiguration.getAvailableLocationsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\PricingAndConfigurationTest.WSPricingAndConfiguration.getConfigurationAndPricingResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\PricingAndConfigurationTest.WSPricingAndConfiguration.getDecorationColorsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\PricingAndConfigurationTest.WSPricingAndConfiguration.getFobPointsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSPricingAndConfiguration\PricingAndConfiguration_v1_0_0.wsdl" />
+    <None Include="Service References\WSPricingAndConfiguration\SharedObjectsPricingAndConfiguration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\GetProductCloseOutRequest1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\GetProductCloseOutResponse1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\GetProductDateModifiedRequest1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\GetProductDateModifiedResponse1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\GetProductRequest1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\GetProductResponse1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\GetProductSellableRequest1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\GetProductSellableResponse1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\iso3166-country-code1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WSProductData\PricingAndConfigurationTest.WSProductData.getProductCloseOutResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSProductData\PricingAndConfigurationTest.WSProductData.getProductDateModifiedResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSProductData\PricingAndConfigurationTest.WSProductData.getProductResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSProductData\PricingAndConfigurationTest.WSProductData.getProductSellableResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WSProductData\ProductData_v1_0_01.wsdl" />
+    <None Include="Service References\WSProductData\SharedProductObjects1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WSMediaContent\" />
+    <WCFMetadataStorage Include="Service References\WSPricingAndConfiguration\" />
+    <WCFMetadataStorage Include="Service References\WSProductData\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSProductData\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSProductData\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSProductData\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSPricingAndConfiguration\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSPricingAndConfiguration\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSPricingAndConfiguration\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSMediaContent\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSMediaContent\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WSMediaContent\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

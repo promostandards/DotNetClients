@@ -1,0 +1,12 @@
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\bin\Debug\PricingAndConfigurationTest.exe.config
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\bin\Debug\PricingAndConfigurationTest.exe
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\bin\Debug\PricingAndConfigurationTest.pdb
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\obj\Debug\PricingAndConfigurationTest.exe
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\obj\Debug\PricingAndConfigurationTest.pdb
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\obj\Debug\PricingAndConfigurationTest.csprojResolveAssemblyReference.cache
+C:\Users\eleon\Documents\visual studio 2017\PricingAndConfigurationTest\PricingAndConfigurationTest\bin\Debug\PricingAndConfigurationTest.exe.config
+C:\Users\eleon\Documents\visual studio 2017\PricingAndConfigurationTest\PricingAndConfigurationTest\bin\Debug\PricingAndConfigurationTest.exe
+C:\Users\eleon\Documents\visual studio 2017\PricingAndConfigurationTest\PricingAndConfigurationTest\bin\Debug\PricingAndConfigurationTest.pdb
+C:\Users\eleon\Documents\visual studio 2017\PricingAndConfigurationTest\PricingAndConfigurationTest\obj\Debug\PricingAndConfigurationTest.csprojResolveAssemblyReference.cache
+C:\Users\eleon\Documents\visual studio 2017\PricingAndConfigurationTest\PricingAndConfigurationTest\obj\Debug\PricingAndConfigurationTest.exe
+C:\Users\eleon\Documents\visual studio 2017\PricingAndConfigurationTest\PricingAndConfigurationTest\obj\Debug\PricingAndConfigurationTest.pdb

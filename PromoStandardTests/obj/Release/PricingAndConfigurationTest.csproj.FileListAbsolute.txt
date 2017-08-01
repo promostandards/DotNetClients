@@ -1,0 +1,5 @@
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\bin\Release\PricingAndConfigurationTest.exe.config
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\bin\Release\PricingAndConfigurationTest.exe
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\bin\Release\PricingAndConfigurationTest.pdb
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\obj\Release\PricingAndConfigurationTest.exe
+C:\Users\eleon\Documents\Visual Studio 2015\Projects\PricingAndConfigurationTest\PricingAndConfigurationTest\obj\Release\PricingAndConfigurationTest.pdb

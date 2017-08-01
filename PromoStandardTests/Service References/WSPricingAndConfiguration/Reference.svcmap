@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e610521e-2275-4a23-b8f8-69ca0c2ea277" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ppds.hitpromo.net/pricingAndConfiguration" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GetDecorationColorsRequest.xsd" MetadataType="Schema" ID="5c71cc64-fecf-4d8b-9d18-d6f745bea945" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetDecorationColorsRequest.xsd" />
+    <MetadataFile FileName="GetAvailableLocationsResponse.xsd" MetadataType="Schema" ID="d6121788-1ae8-4213-8a1c-921bba7f15b3" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetAvailableLocationsResponse.xsd" />
+    <MetadataFile FileName="iso4217-currency-code.xsd" MetadataType="Schema" ID="0bb7a950-faca-46aa-b2b1-4a7220b6cab8" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/iso4217-currency-code.xsd" />
+    <MetadataFile FileName="GetAvailableChargesRequest.xsd" MetadataType="Schema" ID="cad69dd5-37b5-432b-a75d-c88a003884d2" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetAvailableChargesRequest.xsd" />
+    <MetadataFile FileName="GetFobPointsRequest.xsd" MetadataType="Schema" ID="1f8668cc-9057-4f84-9652-16b6bd03dfe0" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetFobPointsRequest.xsd" />
+    <MetadataFile FileName="GetDecorationColorsResponse.xsd" MetadataType="Schema" ID="095e06a2-96db-49de-9f28-b5caec8d7fd9" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetDecorationColorsResponse.xsd" />
+    <MetadataFile FileName="GetAvailableLocationsRequest.xsd" MetadataType="Schema" ID="7d806789-4c88-4b7e-83fd-145d7ffbfe38" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetAvailableLocationsRequest.xsd" />
+    <MetadataFile FileName="PricingAndConfiguration_v1_0_0.wsdl" MetadataType="Wsdl" ID="f5b5acdc-24c0-47e0-a5ae-5e65099fa0dd" SourceId="1" SourceUrl="https://ppds.hitpromo.net/pricingAndConfiguration" />
+    <MetadataFile FileName="GetConfigurationAndPricingRequest.xsd" MetadataType="Schema" ID="8d54cf75-1212-4788-9d44-94747dbe38cd" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetConfigurationAndPricingRequest.xsd" />
+    <MetadataFile FileName="GetAvailableChargesResponse.xsd" MetadataType="Schema" ID="7eca728d-72f6-4040-918e-41f8186568ae" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetAvailableChargesResponse.xsd" />
+    <MetadataFile FileName="GetConfigurationAndPricingResponse.xsd" MetadataType="Schema" ID="49232c92-9949-44bf-ae07-61853d08419b" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetConfigurationAndPricingResponse.xsd" />
+    <MetadataFile FileName="iso3166-country-code.xsd" MetadataType="Schema" ID="2ba0e791-f4b9-49bd-97f7-d34c3c8a89d5" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/iso3166-country-code.xsd" />
+    <MetadataFile FileName="SharedObjectsPricingAndConfiguration.xsd" MetadataType="Schema" ID="2bcc4468-c2cb-491e-8a59-bda0a3293a67" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/SharedObjectsPricingAndConfiguration.xsd" />
+    <MetadataFile FileName="GetFobPointsResponse.xsd" MetadataType="Schema" ID="59adb784-0f5c-4bf5-8f0f-15fcd7f9689e" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/pricingAndConfiguration/GetFobPointsResponse.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

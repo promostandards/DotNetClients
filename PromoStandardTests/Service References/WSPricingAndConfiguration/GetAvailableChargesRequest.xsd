@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ns3="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/SharedObjects/" xmlns:ns1="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" xmlns:ns2="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" elementFormDefault="qualified" targetNamespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="SharedObjectsPricingAndConfiguration.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/SharedObjects/" />
+  <xsd:element name="GetAvailableChargesRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ns3:wsVersion" />
+        <xsd:element ref="ns3:id" />
+        <xsd:element minOccurs="0" ref="ns3:password" />
+        <xsd:element minOccurs="0" ref="ns3:productId" />
+        <xsd:element ref="ns3:localizationCountry" />
+        <xsd:element ref="ns3:localizationLanguage" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/SharedObjects/" xmlns:ns1="http://www.codesynthesis.com/xmlns/xsstl" name="PricingAndConfiguration_v1_0_0" targetNamespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetAvailableLocationsRequest.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetAvailableLocationsResponse.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetDecorationColorsRequest.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetDecorationColorsResponse.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetConfigurationAndPricingRequest.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetConfigurationAndPricingResponse.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetFobPointsRequest.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetFobPointsResponse.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetAvailableChargesRequest.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="/wsdl/pricingAndConfiguration/GetAvailableChargesResponse.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAvailableLocationsRequestMessage">
+    <wsdl:part name="GetAvailableLocationsRequest" element="tns:GetAvailableLocationsRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableLocationsResponseMessage">
+    <wsdl:part name="GetAvailableLocationsResponse" element="tns:GetAvailableLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDecorationColorsRequestMessage">
+    <wsdl:part name="GetDecorationColorsRequest" element="tns:GetDecorationColorsRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetDecorationColorsResponseMessage">
+    <wsdl:part name="GetDecorationColorsResponse" element="tns:GetDecorationColorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetConfigurationAndPricingRequestMessage">
+    <wsdl:part name="GetConfigurationAndPricingRequest" element="tns:GetConfigurationAndPricingRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetConfigurationAndPricingResponseMessage">
+    <wsdl:part name="GetConfigurationAndPricingResponse" element="tns:GetConfigurationAndPricingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFobPointsRequestMessage">
+    <wsdl:part name="GetFobPointsRequest" element="tns:GetFobPointsRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetFobPointsResponseMessage">
+    <wsdl:part name="GetFobPointsResponse" element="tns:GetFobPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableChargesRequestMessage">
+    <wsdl:part name="GetAvailableChargesRequest" element="tns:GetAvailableChargesRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableChargesResponseMessage">
+    <wsdl:part name="GetAvailableChargesResponse" element="tns:GetAvailableChargesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PricingAndConfigurationService">
+    <wsdl:operation name="getAvailableLocations">
+      <wsdl:input message="tns:GetAvailableLocationsRequestMessage" />
+      <wsdl:output message="tns:GetAvailableLocationsResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDecorationColors">
+      <wsdl:input message="tns:GetDecorationColorsRequestMessage" />
+      <wsdl:output message="tns:GetDecorationColorsResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getConfigurationAndPricing">
+      <wsdl:input message="tns:GetConfigurationAndPricingRequestMessage" />
+      <wsdl:output message="tns:GetConfigurationAndPricingResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getFobPoints">
+      <wsdl:input message="tns:GetFobPointsRequestMessage" />
+      <wsdl:output message="tns:GetFobPointsResponseMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableCharges">
+      <wsdl:input message="tns:GetAvailableChargesRequestMessage" />
+      <wsdl:output message="tns:GetAvailableChargesResponseMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PricingAndConfigurationServiceBinding" type="tns:PricingAndConfigurationService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getAvailableLocations">
+      <soap:operation soapAction="getAvailableLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDecorationColors">
+      <soap:operation soapAction="getDecorationColors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConfigurationAndPricing">
+      <soap:operation soapAction="getConfigurationAndPricing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFobPoints">
+      <soap:operation soapAction="getFobPoints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAvailableCharges">
+      <soap:operation soapAction="getAvailableCharges" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PricingAndConfigurationService">
+    <wsdl:port name="PricingAndConfigurationServiceBinding" binding="tns:PricingAndConfigurationServiceBinding">
+      <soap:address location="https://ppds.hitpromo.net/pricingAndConfiguration?ws=1" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

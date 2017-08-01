@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ns3="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/SharedObjects/" xmlns:ns1="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" xmlns:ns2="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" elementFormDefault="qualified" targetNamespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="SharedObjectsPricingAndConfiguration.xsd" namespace="http://www.promostandards.org/WSDL/PricingAndConfiguration/1.0.0/SharedObjects/" />
+  <xsd:element name="Color">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ns3:colorId" />
+        <xsd:element ref="ns3:colorName" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="DecorationMethod">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ns3:decorationId" />
+        <xsd:element ref="ns3:decorationName" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetDecorationColorsResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element minOccurs="0" name="DecorationColors">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element minOccurs="0" name="ColorArray">
+                <xsd:annotation>
+                  <xsd:documentation>
+                                        An Array of colors
+                                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="unbounded" ref="ns2:Color" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element ref="ns3:productId" />
+              <xsd:element ref="ns3:locationId" />
+              <xsd:element minOccurs="0" name="DecorationMethodArray">
+                <xsd:annotation>
+                  <xsd:documentation>
+                                        An Array of decoration method
+                                    </xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="unbounded" ref="ns2:DecorationMethod" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element minOccurs="1" name="pmsMatch" nillable="true" type="xsd:boolean">
+                <xsd:annotation>
+                  <xsd:documentation>
+                                        PMS match or nto
+                                    </xsd:documentation>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element minOccurs="1" name="fullColor" nillable="true" type="xsd:boolean">
+                <xsd:annotation>
+                  <xsd:documentation>
+                                        Full Color or not
+                                    </xsd:documentation>
+                </xsd:annotation>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element minOccurs="0" ref="ns3:ErrorMessage" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

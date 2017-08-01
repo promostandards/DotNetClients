@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9d3ef0f5-f4e1-4b70-bc10-c0f3da70ba8f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ppds.hitpromo.net/productData" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GetProductDateModifiedRequest1.xsd" MetadataType="Schema" ID="f7869d10-eca4-4ed3-b82f-0b4b988e7d33" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/GetProductDateModifiedRequest.xsd" />
+    <MetadataFile FileName="GetProductSellableRequest1.xsd" MetadataType="Schema" ID="7ccaf271-c161-4503-817a-9288bcf047e4" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/GetProductSellableRequest.xsd" />
+    <MetadataFile FileName="GetProductCloseOutRequest1.xsd" MetadataType="Schema" ID="88b57d7a-6099-4a43-a3cb-f6bfae733603" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/GetProductCloseOutRequest.xsd" />
+    <MetadataFile FileName="GetProductDateModifiedResponse1.xsd" MetadataType="Schema" ID="0006fdbc-50bc-4d45-88f6-37f157a023ed" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/GetProductDateModifiedResponse.xsd" />
+    <MetadataFile FileName="SharedProductObjects1.xsd" MetadataType="Schema" ID="ef88e4fa-4888-49e7-9439-b0b8e3147742" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/SharedProductObjects.xsd" />
+    <MetadataFile FileName="GetProductRequest1.xsd" MetadataType="Schema" ID="04e99334-15c6-4130-8ae5-955ca813c0ee" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/GetProductRequest.xsd" />
+    <MetadataFile FileName="iso3166-country-code1.xsd" MetadataType="Schema" ID="af258d7f-be67-47bc-89dc-56d054d1a49c" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/iso3166-country-code.xsd" />
+    <MetadataFile FileName="GetProductResponse1.xsd" MetadataType="Schema" ID="0883e9ea-a2c5-4558-be22-edcccbd59069" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/GetProductResponse.xsd" />
+    <MetadataFile FileName="GetProductSellableResponse1.xsd" MetadataType="Schema" ID="9c942728-1623-40fa-a92b-1ce691a09937" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/GetProductSellableResponse.xsd" />
+    <MetadataFile FileName="ProductData_v1_0_01.wsdl" MetadataType="Wsdl" ID="5f4eb2d7-fe14-4abe-a4ba-49343a3eea84" SourceId="1" SourceUrl="https://ppds.hitpromo.net/productData" />
+    <MetadataFile FileName="GetProductCloseOutResponse1.xsd" MetadataType="Schema" ID="f52cb989-86ee-4034-9e17-1381868aea7b" SourceId="1" SourceUrl="https://ppds.hitpromo.net/wsdl/productData/GetProductCloseOutResponse.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
